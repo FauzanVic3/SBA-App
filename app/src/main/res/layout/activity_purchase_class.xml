@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Premium.PurchaseClassActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_dark_blue">
+
+
+    <ImageView
+        android:id="@+id/imageViewPremiumClassBanner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/banner_height"
+        android:background="@drawable/banner_khat_thuluth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPremiumBar"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:background="#99000000"
+        android:gravity="center"
+        android:text="@string/thuluth"
+        android:textColor="@color/white"
+        android:textSize="@dimen/page_title"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewPremiumClassBanner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewPremiumClassBanner"
+            >
+    <TextView
+        android:id="@+id/textViewPremiumDescription"
+        android:layout_width="334dp"
+        android:layout_height="155dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/white"
+        android:padding="8dp"
+        android:text="@string/thuluth_description"
+        android:textSize="@dimen/paragraph_text"
+        android:textStyle="bold|italic"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+        </ScrollView>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="261dp"
+            android:layout_height="159dp"
+            android:background="@color/white"
+            android:checkedButton="@+id/radioButtonBeginner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView">
+
+            <RadioButton
+                android:id="@+id/radioButtonBeginner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:background="?android:selectableItemBackground"
+                android:button="@null"
+                android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                android:layoutDirection="rtl"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:text="@string/beginner_purchase"
+                android:textAlignment="textStart"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonIntermediate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:background="?android:selectableItemBackground"
+                android:button="@null"
+                android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                android:layoutDirection="rtl"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:text="@string/intermediate_purchase"
+                android:textAlignment="textStart"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonAdvanced"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:background="?android:selectableItemBackground"
+                android:button="@null"
+                android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                android:layoutDirection="rtl"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:text="@string/advanced_purchase"
+                android:textAlignment="textStart"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonAll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:background="?android:selectableItemBackground"
+                android:button="@null"
+                android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                android:layoutDirection="rtl"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:text="@string/all_purchase"
+                android:textAlignment="textStart"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </RadioGroup>
+
+    <Button
+        android:id="@+id/purchaseBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:text="@string/buyBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <ImageButton
+        android:id="@+id/infoBtnBeginner"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:drawable/ic_menu_info_details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView"
+        android:visibility="invisible"/>
+
+    <ImageButton
+        android:id="@+id/infoBtnIntermediate"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/ic_menu_info_details"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/infoBtnBeginner" />
+
+    <ImageButton
+        android:id="@+id/infoBtnAdvanced"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+        android:visibility="invisible"
+        android:background="@android:drawable/ic_menu_info_details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/infoBtnIntermediate" />
+
+    <ImageButton
+        android:id="@+id/infoBtnAll"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        android:background="@android:drawable/ic_menu_info_details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/infoBtnAdvanced" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

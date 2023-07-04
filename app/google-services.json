@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1042885650283",
+    "firebase_url": "https://sheikhbakryayoub.firebaseio.com",
+    "project_id": "sheikhbakryayoub",
+    "storage_bucket": "sheikhbakryayoub.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042885650283:android:c8d4687f8fb76099",
+        "android_client_info": {
+          "package_name": "com.example.sbaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1042885650283-ovso8477ai6b8e031ur59jsccdrmfg42.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sbaapp",
+            "certificate_hash": "c971c43652bfb0b6a7428243c9437254dfda49fe"
+          }
+        },
+        {
+          "client_id": "1042885650283-hbp1mk6g0jhselihprucqiojcigk5o36.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI6UGGRbJ5kmIJ_gFkS4MJmVc5yQB1b6A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1042885650283-hbp1mk6g0jhselihprucqiojcigk5o36.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

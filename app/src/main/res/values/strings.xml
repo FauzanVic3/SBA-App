@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">Shaikh Bakry Ayoub</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_quran">Quran</string>
+    <string name="navigation_drawer_toolbar">Toolbar</string>
+    <string name="navigation_drawer_open">Drawer Open</string>
+    <string name="navigation_drawer_close">Drawer Closed</string>
+    <string name="video_title">Title: </string>
+    <string name="video_description">Description: </string>
+    <string name="video_admin">Publisher: </string>
+
+    <string name="khat">KHAT</string>
+    <string name="nb">Nurul Bayan</string>
+
+    <string name="thuluth">THULUTH</string>
+    <string name="diwani">DIWANI</string>
+    <string name="diwani_jali">DIWANI JALI</string>
+    <string name="riqah">RIQAH</string>
+    <string name="nasakh">NASAKH</string>
+    <string name="farisi">FARISI</string>
+    <string name="nurul_bayan">NURUL BAYAN</string>
+
+    <string name="thuluth_description">Learn Thuluth in 3 levels!\n\nBeginner class: \n\t Learn how to write every letter in Thuluth\n\nIntermediate class: \n\t Learn how to combine the letters\n\nAdvanced class: \n\t Learn how to design and write advanced Thuluth calligraphy</string>
+    <string name="diwani_description">Learn Diwani in 3 levels!\n\nBeginner class: Learn how to write every letter in Diwani\n\nIntermediate class: Learn how to combine the letters\n\nAdvanced class: Learn how to design and write advanced Diwani calligraphy</string>
+    <string name="diwani_jali_description">Learn Diwani Jali in 3 levels!\n\nBeginner class: Learn how to write every letter in Diwani Jali\n\nIntermediate class: Learn how to combine the letters\n\nAdvanced class: Learn how to design and write advanced Diwani Jali calligraphy</string>
+    <string name="nasakh_description">Learn Nasakh in 3 levels!\n\nBeginner class: Learn how to write every letter in Nasakh\n\nIntermediate class: Learn how to combine the letters\n\nAdvanced class: Learn how to design and write advanced Nasakh calligraphy</string>
+    <string name="riqah_description">Learn Riqah in 3 levels!\n\nBeginner class: Learn how to write every letter in Riqah\n\nIntermediate class: Learn how to combine the letters\n\nAdvanced class: Learn how to design and write advanced Riqah calligraphy</string>
+    <string name="farisi_description">Learn Farisi in 3 levels!\n\nBeginner class: Learn how to write every letter in Farisi\n\nIntermediate class: Learn how to combine the letters\n\nAdvanced class: Learn how to design and write advanced Farisi calligraphy</string>
+    <string name="nurul_bayan_description">Learn Nurul Bayan in 3 levels!\n\nBeginner class: Learn how to pronounce Hijaiyyah letters\n\nIntermediate class: Learn Tanwin rules + practice\n\nAdvanced class: Learn Tajweed rules + practice</string>
+
+    <!--string name="beginner">Beginner \t\t\t\t\t USD 19.90</string-->
+    <string name="beginner">Beginner</string>
+    <string name="intermediate">Intermediate</string>
+    <string name="advanced">Advanced</string>
+
+
+    <string name="beginner_purchase">Beginner \t\t\t\t\t RM 30.00</string>
+    <string name="intermediate_purchase">Intermediate \t\t RM 50.00</string>
+    <string name="advanced_purchase">Advanced \t\t\t\t RM 80.00</string>
+    <string name="all_purchase">Join ALL class! \t RM 150.00 </string>
+    <string name="purchase_instruction"> We are currently using manual payment method using bank transfer receipts (Physical receipts or digital receipts screenshot)\n\n 1. Perform payment to the following bank account:\n\n Bank:\n\t Bank Islam \n Account:\n\t 12345678910\n Recipient Name: \n\t MUHAMMAD FAUZAN BIN\n\t MUHAMMAD FAUZI\n\n 2. Choose \"Open Camera\"  or \"Choose Image\"  Buttons below to submit picture proof of payment\n\n 3. Press \"Send Request\" to start processing the payment\n\n Your request should take no more than 24 hours to be processed\nYou will be notified of the purchase approval on the Home screen\n\nShould you require assistance, click on the link below to start Whatsapp chat with the admin. Thank you!</string>
+    <string name="whatsapp_admin">https://wa.me/601128870677?text=I\'m%20interested%20in%20purchasing%20your%20class%20</string>
+
+
+    <string name="title_bottom_nav_videoList">Videos</string>
+    <string name="title_bottom_nav_submission">Submission</string>
+
+    <string name="title_bottom_nav_assessment">Pending</string>
+    <string name="title_bottom_nav_completed">Completed</string>
+    <string name="title_bottom_nav_approved">Approved</string>
+
+
+    <string name="question_nurul_bayan_beginner">1. Please record your voice for all arabic alphabets below : \n ا ب ت ث ج ح خ د ذ ر ز\n\n س ش ص ض ط ظ ع غ ف ق\n\n ك ل م ن ه و ء ى \n\n2. Press the record button to record your voice \n\n3. Press "Submit"\n\n\nYour submission will be reviewed by the examiner.</string>
+    <string name="question_nurul_bayan_intermediate">1. Please write on a piece of paper the khat calligraphy for ALL ARABIC ALPHABETS\n (eg. ا ب ت .. ي ). \n\n2. Capture the image of the khat \n\n3. Press "Submit" to upload\n\n\nYour submission will be reviewed by the examiner.</string>
+    <string name="question_nurul_bayan_advanced">1. Please write on a piece of paper the khat calligraphy for ALL ARABIC ALPHABETS\n (eg. ا ب ت .. ي ). \n\n2. Capture the image of the khat \n\n3. Press "Submit" to upload\n\n\nYour submission will be reviewed by the examiner.</string>
+    <string name="question_khat_beginner">1. Please write on a piece of paper the khat calligraphy for ALL ARABIC ALPHABETS\n (eg. ا ب ت .. ي ). \n\n2. Capture the image of the khat \n\n3. Press "Submit" to upload\n\n\nYour submission will be reviewed by the examiner.</string>
+    <string name="question_khat_intermediate"></string>
+    <string name="question_khat_advanced">1. Please write on a piece of paper the khat designs and tajweeed signs for Surah Al-Ikhlas\n eg: fathah, kasrah, dhammah  \n\n2. Capture the image of the khat \n\n3. Press "Submit" to upload\n\n\nYour submission will be reviewed by the examiner. Thank you.</string>
+    <string name="question_khat_advanced_special">1. Please write on a piece of paper:\n\n Task 1: The khat designs and tajweeed signs for Surah Al-Ikhlas\n eg: fathah, kasrah, dhammah\n\nTask 2: Design the following ayat into circle shape:\n حسن. الخط من مفاتيح الرزق \n\nTask 3: Design the following ayat into diamond shape: \nخيركم من تعلم القرأن وعلمه  \n\n2. Capture the image of the khat \n\n3. Press "Submit" to upload\n\n\nYour submission will be reviewed by the examiner. Thank you.</string>
+
+    <string name="buyBtn">Join us now!</string>
+
+    <string name="user_status">User Status</string>
+
+    <string-array name="spinnerUserType">
+        <item>User</item>
+        <item>Admin</item>
+    </string-array>
+    <string-array name="spinnerClassLevel">
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Advance</item>
+    </string-array>
+    <string-array name="spinnerClass">
+        <item>Khat</item>
+        <item>Nurul Bayan</item>
+    </string-array>
+    <string-array name="spinnerSubclassKhat">
+        <item>Diwani</item>
+        <item>Diwani Jali</item>
+        <item>Farisi</item>
+        <item>Nasakh</item>
+        <item>Riqah</item>
+        <item>Thuluth</item>
+    </string-array>
+    <string name="title_activity_submission">Submission</string>
+
+
+</resources>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClassVideoPackage.SubClassList"
+    android:background="@drawable/background_plain_dark_blue">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="314dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center_vertical"
+            android:paddingLeft="32dp"
+            android:text="Introduction Class"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="@dimen/page_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:background="@color/fadedBlue"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageViewDemo1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+
+                app:srcCompat="@drawable/classlist_quran" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TVDemo1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:text="Siri Nurul Bayan Kaedah Memperbaiki Bacaan Al-Quran, Siri Pertama: Pengenalan."
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:baselineAligned="false"
+            android:fadingEdge="horizontal"
+            android:background="@color/fadedBlue"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageViewDemo2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#003F51B5"
+                android:clickable="true"
+                app:srcCompat="@drawable/classlist_quran" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="2dp"
+                android:layout_weight="1"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TVDemo2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:singleLine="false"
+                    android:text="TextView"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center_vertical"
+            android:paddingLeft="32dp"
+            android:text="Come and Join Our Classes!"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="@dimen/page_title" />
+
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarSubClass"
+        android:layout_width="match_parent"
+        android:layout_height="386dp"
+        android:background="@color/fadedBlue"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/BeginnerBtn"
+        android:layout_width="195dp"
+        android:layout_height="85dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/subclass_beginner_nurul_bayan"
+
+        android:focusableInTouchMode="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+    <ImageButton
+        android:id="@+id/IntermediateBtn"
+        android:layout_width="195dp"
+        android:layout_height="85dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/subclass_intermediate_nurul_bayan"
+
+        android:focusableInTouchMode="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BeginnerBtn" />
+
+    <ImageButton
+        android:id="@+id/AdvancedBtn"
+        android:layout_width="195dp"
+        android:layout_height="85dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+
+        android:background="@drawable/subclass_advanced_nurul_bayan"
+        android:focusableInTouchMode="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IntermediateBtn"
+        app:layout_constraintVertical_bias="0.02" />
+
+
+    <ImageButton
+        android:id="@+id/RiqahBtn"
+        android:layout_width="175dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/subclass_khat_riqah"
+        app:layout_constraintStart_toStartOf="@+id/toolbarSubClass"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+    <ImageButton
+        android:id="@+id/DiwaniJaliBtn"
+        android:layout_width="175dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/subclass_khat_diwani_jali"
+        app:layout_constraintEnd_toEndOf="@+id/toolbarSubClass"
+        app:layout_constraintTop_toBottomOf="@+id/DiwaniBtn" />
+
+    <ImageButton
+        android:id="@+id/DiwaniBtn"
+        android:layout_width="175dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/subclass_khat_diwani"
+        app:layout_constraintEnd_toEndOf="@+id/toolbarSubClass"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/DiwaniJaliBtn"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+    <ImageButton
+        android:id="@+id/NasakhBtn"
+        android:layout_width="175dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/subclass_khat_nasakh"
+        app:layout_constraintStart_toStartOf="@+id/toolbarSubClass"
+        app:layout_constraintTop_toBottomOf="@+id/RiqahBtn" />
+
+    <ImageButton
+        android:id="@+id/FarisiBtn"
+        android:layout_width="175dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/subclass_khat_farisi"
+        app:layout_constraintStart_toStartOf="@+id/toolbarSubClass"
+        app:layout_constraintTop_toBottomOf="@+id/NasakhBtn" />
+
+    <ImageButton
+        android:id="@+id/ThuluthBtn"
+        android:layout_width="175dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/subclass_khat_thuluth"
+        app:layout_constraintEnd_toEndOf="@+id/toolbarSubClass"
+        app:layout_constraintTop_toBottomOf="@+id/DiwaniJaliBtn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

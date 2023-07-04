@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_dark_blue"
+    tools:context=".Dashboard.AdminDashboardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--Nurul Bayan Header -->
+        <LinearLayout
+            android:id="@+id/headerNurulBayan"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:gravity="center"
+                android:text="@string/nurul_bayan"
+                android:textColor="@color/white"
+                android:textSize="@dimen/page_title" />
+
+            <Switch
+                android:id="@+id/switchNurulBayan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:layout_gravity="center"
+                android:visibility="gone"
+
+
+                />
+        </LinearLayout>
+        <!--Nurul Bayan Body-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/expandableNurulBayan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/fadedBlue">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@color/colorPrimaryDark">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Submissions to evaluate: "
+                    android:paddingStart="@dimen/fab_margin"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/page_title"
+                    />
+
+                <TextView
+                    android:id="@+id/feedbackTVNB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="#No"
+                    android:textAlignment="textEnd"
+                    android:layout_marginEnd="@dimen/fab_margin"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/page_title"
+                    />
+            </LinearLayout>
+                <Button
+                    android:id="@+id/openEvaluationBtnNB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Evaluate"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="@dimen/fab_margin"/>
+
+
+
+        </LinearLayout>
+        </ScrollView>
+
+        <!--Khat header-->
+        <LinearLayout
+            android:id="@+id/headerKhat"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:gravity="center"
+                android:text="@string/khat"
+                android:textColor="@color/white"
+                android:textSize="@dimen/page_title" />
+
+            <Switch
+                android:id="@+id/switchKhat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:layout_gravity="center"
+
+
+                />
+        </LinearLayout>
+        <!--Khat Body-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/fadedBlue">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@color/colorPrimaryDark">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Submissions to evaluate: "
+                        android:paddingStart="@dimen/fab_margin"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/page_title"
+                        />
+
+                    <TextView
+                        android:id="@+id/feedbackTVKhat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="#No"
+                        android:textAlignment="textEnd"
+                        android:layout_marginEnd="@dimen/fab_margin"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/page_title"
+                        />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/openEvaluationBtnKhat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Evaluate"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="@dimen/fab_margin"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/expandableKhat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <!--Riqah Header-->
+                <LinearLayout
+                    android:id="@+id/headerKhatRiqah"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:layout_marginBottom="@dimen/fab_margin"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fab_margin"
+                        android:layout_marginTop="@dimen/fab_margin"
+                        android:layout_marginBottom="@dimen/fab_margin"
+                        android:gravity="center"
+                        android:text="@string/riqah"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/page_title" />
+
+
+                </LinearLayout>
+                <!--Riqah Body-->
+                <LinearLayout
+                    android:id="@+id/expandableKhatRiqah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/fadedBlue">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@color/colorPrimaryDark">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Submissions to evaluate: "
+                            android:paddingStart="@dimen/fab_margin"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/page_title"
+                            />
+
+                        <TextView
+                            android:id="@+id/feedbackTVRiqah"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="#No"
+                            android:textAlignment="textEnd"
+                            android:layout_marginEnd="@dimen/fab_margin"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/page_title"
+                            />
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/openEvaluationBtnRiqah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Evaluate"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="@dimen/fab_margin"/>
+
+                </LinearLayout>
+                <!--Nasakh Header-->
+                <LinearLayout
+                    android:id="@+id/headerKhatNasakh"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:layout_marginBottom="@dimen/fab_margin"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fab_margin"
+                        android:layout_marginTop="@dimen/fab_margin"
+                        android:layout_marginBottom="@dimen/fab_margin"
+                        android:gravity="center"
+                        android:text="@string/nasakh"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/page_title" />
+
+
+                </LinearLayout>
+                <!--Nasakh Body-->
+                <LinearLayout
+                    android:id="@+id/expandableKhatNasakh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/fadedBlue">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@color/colorPrimaryDark">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Submissions to evaluate: "
+                            android:paddingStart="@dimen/fab_margin"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/page_title"
+                            />
+
+                        <TextView
+                            android:id="@+id/feedbackTVNasakh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="#No"
+                            android:textAlignment="textEnd"
+                            android:layout_marginEnd="@dimen/fab_margin"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/page_title"
+                            />
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/openEvaluationBtnNasakh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Evaluate"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="@dimen/fab_margin"/>
+
+                </LinearLayout>
+                <!--Farisi Header-->
+                <LinearLayout
+                    android:id="@+id/headerKhatFarisi"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:layout_marginBottom="@dimen/fab_margin"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fab_margin"
+                        android:layout_marginTop="@dimen/fab_margin"
+                        android:layout_marginBottom="@dimen/fab_margin"
+                        android:gravity="center"
+                        android:text="@string/farisi"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/page_title" />
+
+
+                </LinearLayout>
+                <!--Farisi Body-->
+                <LinearLayout
+                    android:id="@+id/expandableKhatFarisi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/fadedBlue">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@color/colorPrimaryDark">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Submissions to evaluate: "
+                            android:paddingStart="@dimen/fab_margin"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/page_title"
+                            />
+
+                        <TextView
+                            android:id="@+id/feedbackTVFarisi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="#No"
+                            android:textAlignment="textEnd"
+                            android:layout_marginEnd="@dimen/fab_margin"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/page_title"
+                            />
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/openEvaluationBtnFarisi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Evaluate"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="@dimen/fab_margin"/>
+
+                </LinearLayout>
+                <!--Diwani Header-->
+                <LinearLayout
+                    android:id="@+id/headerKhatDiwani"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:layout_marginBottom="@dimen/fab_margin"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fab_margin"
+                        android:layout_marginTop="@dimen/fab_margin"
+                        android:layout_marginBottom="@dimen/fab_margin"
+                        android:gravity="center"
+                        android:text="@string/diwani"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/page_title" />
+
+
+                </LinearLayout>
+                <!--Diwani Body-->
+                <LinearLayout
+                    android:id="@+id/expandableKhatDiwani"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/fadedBlue">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@color/colorPrimaryDark">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Submissions to evaluate: "
+                            android:paddingStart="@dimen/fab_margin"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/page_title"
+                            />
+
+                        <TextView
+                            android:id="@+id/feedbackTVDiwani"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="#No"
+                            android:textAlignment="textEnd"
+                            android:layout_marginEnd="@dimen/fab_margin"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/page_title"
+                            />
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/openEvaluationBtnDiwani"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Evaluate"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="@dimen/fab_margin"/>
+
+                </LinearLayout>
+                <!--Diwani Jali Header-->
+                <LinearLayout
+                    android:id="@+id/headerKhatDiwaniJali"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:layout_marginBottom="@dimen/fab_margin"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fab_margin"
+                        android:layout_marginTop="@dimen/fab_margin"
+                        android:layout_marginBottom="@dimen/fab_margin"
+                        android:gravity="center"
+                        android:text="@string/diwani_jali"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/page_title" />
+
+
+                </LinearLayout>
+                <!--Diwani Jali Body-->
+                <LinearLayout
+                    android:id="@+id/expandableKhatDiwaniJali"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/fadedBlue">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@color/colorPrimaryDark">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Submissions to evaluate: "
+                            android:paddingStart="@dimen/fab_margin"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/page_title"
+                            />
+
+                        <TextView
+                            android:id="@+id/feedbackTVDiwaniJali"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="#No"
+                            android:textAlignment="textEnd"
+                            android:layout_marginEnd="@dimen/fab_margin"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/page_title"
+                            />
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/openEvaluationBtnDiwaniJali"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Evaluate"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="@dimen/fab_margin"/>
+
+                </LinearLayout>
+                <!--Thuluth Header-->
+                <LinearLayout
+                    android:id="@+id/headerKhatThuluth"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:layout_marginBottom="@dimen/fab_margin"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fab_margin"
+                        android:layout_marginTop="@dimen/fab_margin"
+                        android:layout_marginBottom="@dimen/fab_margin"
+                        android:gravity="center"
+                        android:text="@string/thuluth"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/page_title" />
+
+
+                </LinearLayout>
+                <!--Thuluth Body-->
+                <LinearLayout
+                    android:id="@+id/expandableKhatThuluth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/fadedBlue">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@color/colorPrimaryDark">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Submissions to evaluate: "
+                            android:paddingStart="@dimen/fab_margin"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/page_title"
+                            />
+
+                        <TextView
+                            android:id="@+id/feedbackTVThuluth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="#No"
+                            android:textAlignment="textEnd"
+                            android:layout_marginEnd="@dimen/fab_margin"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/page_title"
+                            />
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/openEvaluationBtnThuluth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Evaluate"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="@dimen/fab_margin"/>
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</ScrollView>

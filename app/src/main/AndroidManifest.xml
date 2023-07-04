@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sbaapp">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_book_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_book_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ClassVideoPackage.ManageVideoContent.EditVideoActivity"></activity>
+        <activity android:name=".ClassVideoPackage.ManageVideoContent.EditVideoList" />
+        <activity android:name=".ClassVideoPackage.ManageVideoContent.EditVideoCategory" />
+        <activity android:name=".ClassVideoPackage.ManageVideoContent.ManageVideoContentActivity" />
+        <activity android:name=".NotificationActivity" />
+        <activity
+            android:name=".Premium.ApprovePurchaseActivity"
+            android:parentActivityName=".Premium.ApprovePurchaseListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Premium.ApprovePurchaseListActivity" />
+        </activity>
+        <activity
+            android:name=".Premium.ApprovePurchaseListActivity"
+            android:parentActivityName=".AdminMainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AdminMainActivity" />
+        </activity>
+        <activity android:name=".Premium.PurchaseInstructionActivity" />
+        <activity android:name=".Dashboard.AdminDashboardItemCompleted" />
+        <activity android:name=".Account.AddProfilePic" />
+        <activity android:name=".Dashboard.AdminDashboardItemViewCompleted" />
+        <activity android:name=".Dashboard.AdminDashboardItemFeedback" />
+        <activity android:name=".Dashboard.AdminDashboardItemView" />
+        <activity
+            android:name=".AdminMainActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".Dashboard.UserDashboardItemView" />
+        <activity android:name=".Dashboard.UserDashboardActivity" />
+        <activity android:name=".Dashboard.AdminDashboardActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Premium.PurchaseClassActivity" />
+        <activity android:name=".YoutubeIntegration.YoutubeChannel" />
+        <activity android:name=".ClassVideoPackage.ClassList" />
+        <activity android:name=".ClassVideoPackage.SubClassList" />
+        <activity android:name=".ClassVideoPackage.VideoList" />
+        <activity android:name=".ClassVideoPackage.ClassVideo" />
+        <activity android:name=".ClassVideoPackage.ManageVideoContent.UploadVideoContent" />
+        <activity android:name=".ClassVideoPackage.Submission" />
+        <activity
+            android:name=".Account.AccountSetting"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Account.ResetUsername"
+            android:parentActivityName=".Account.AccountSetting">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Account.AccountSetting" />
+        </activity>
+        <activity android:name=".ChatList" />
+        <activity android:name=".Chat" />
+        <activity
+            android:name=".Account.ResetPasswordActivity"
+            android:parentActivityName=".Account.AccountSetting">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Account.AccountSetting" />
+        </activity>
+        <activity
+            android:name=".Account.Login"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Account.Register"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Quran.MainQuranActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Quran.ListSurahActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Quran.ListVerseActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".UploadAnnouncementActivity" />
+    </application>
+
+</manifest>

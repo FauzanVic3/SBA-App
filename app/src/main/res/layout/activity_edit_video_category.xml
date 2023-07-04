@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_dark_blue"
+    tools:context=".ClassVideoPackage.ManageVideoContent.EditVideoCategory">
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:background="@color/colorPrimary"
+        android:padding="8dp"
+        android:text="Select Category"
+        android:textColor="@color/white"
+        android:textSize="@dimen/page_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="#90FFFFFF"
+        android:gravity="center_horizontal"
+
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/classTextView"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="16dp"
+
+                android:gravity="center_vertical"
+                android:text="Class Type"
+                android:textSize="@dimen/list_item_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editPreviewVideoDescription" />
+
+            <Spinner
+                android:id="@+id/spinnerClass"
+                android:layout_width="198dp"
+                android:layout_height="35dp"
+
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.682"
+                app:layout_constraintStart_toEndOf="@+id/classTextView"
+                app:layout_constraintTop_toBottomOf="@+id/editPreviewVideoDescription" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/subclassTextView"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="16dp"
+
+                android:gravity="center_vertical"
+                android:text="Subclass Type"
+                android:textSize="@dimen/list_item_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/classTextView" />
+
+            <Spinner
+                android:id="@+id/spinnerSubclass"
+                android:layout_width="198dp"
+                android:layout_height="35dp"
+
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.692"
+                app:layout_constraintStart_toEndOf="@+id/subclassTextView"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerClass" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/levelTextView"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="16dp"
+
+                android:gravity="center_vertical"
+                android:text="Class Level"
+                android:textSize="@dimen/list_item_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/subclassTextView" />
+
+            <Spinner
+                android:id="@+id/spinnerLevel"
+                android:layout_width="198dp"
+                android:layout_height="35dp"
+
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.692"
+                app:layout_constraintStart_toEndOf="@+id/levelTextView"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerSubclass" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/proceedBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="36dp"
+        android:text="Proceed"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

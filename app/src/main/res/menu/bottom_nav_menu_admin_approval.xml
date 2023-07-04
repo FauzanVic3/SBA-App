@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_requested"
+        android:icon="@drawable/ic_pending"
+        android:title="@string/title_bottom_nav_assessment"/>
+    <item
+        android:id="@+id/nav_done"
+        android:icon="@drawable/ic_done"
+        android:title="@string/title_bottom_nav_approved"/>
+</menu>

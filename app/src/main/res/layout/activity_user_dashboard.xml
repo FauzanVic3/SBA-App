@@ -1,0 +1,2703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_dark_blue"
+    tools:context=".Dashboard.UserDashboardActivity">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <!--Nurul Bayan Header -->
+    <LinearLayout
+        android:id="@+id/headerNurulBayan"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:gravity="center"
+            android:text="@string/nurul_bayan"
+            android:textColor="@color/white"
+            android:textSize="@dimen/page_title" />
+        <TextView
+            android:id="@+id/progressTVNB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/list_item_title"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/fab_margin"
+            android:textColor="@color/white"
+            android:text="0/3"/>
+
+
+
+        <Switch
+            android:id="@+id/switchNurulBayan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:layout_gravity="center"
+
+
+            />
+    </LinearLayout>
+    <!--Nurul Bayan Body-->
+    <LinearLayout
+        android:id="@+id/expandableNurulBayan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--NurulBayanBeginner-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fadedBlueLinearLayout"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textViewNurulBayanBeginner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/beginner"
+                android:textColor="@color/white"
+                android:textSize="@dimen/page_title"
+                android:background="@color/colorPrimaryDark"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fadedBlue"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+
+                    android:text="Submission Status:"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textViewNurulBayanBeginnerSubmissionStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:text="No submission"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fadedBlue"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="228dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+
+                    android:text="Grading :"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textViewNurulBayanBeginnerSubmissionRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:text="Not rated"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fadedBlue"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="228dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+
+                    android:text="Comments :"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textViewNurulBayanBeginnerSubmissionComment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:text="No Comment"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/openAssessmentBtnNurulBayanBeginner"
+                android:text="View Assessment"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/fab_margin" />
+
+
+
+
+        </LinearLayout>
+        <!--NurulBayanIntermediate-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fadedBlueLinearLayout"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textViewNurulBayanIntermediate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/intermediate"
+                android:textColor="@color/white"
+                android:textSize="@dimen/page_title"
+                android:background="@color/colorPrimaryDark"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fadedBlue"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+
+                    android:text="Submission Status:"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textViewNurulBayanIntermediateSubmissionStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:text="No submission"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fadedBlue"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="228dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+
+                    android:text="Grading :"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textViewNurulBayanIntermediateSubmissionRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:text="Not rated"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fadedBlue"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="228dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+
+                    android:text="Comments :"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textViewNurulBayanIntermediateSubmissionComment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:text="No Comment"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/openAssessmentBtnNurulBayanIntermediate"
+                android:text="View Assessment"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/fab_margin" />
+
+
+
+
+        </LinearLayout>
+        <!--NurulBayanAdvanced-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fadedBlueLinearLayout"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/advanced"
+                android:textColor="@color/white"
+                android:textSize="@dimen/page_title"
+                android:background="@color/colorPrimaryDark"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fadedBlue"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+
+                    android:text="Submission Status:"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textViewNurulBayanAdvancedSubmissionStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:text="No submission"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fadedBlue"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="228dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+
+                    android:text="Grading :"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textViewNurulBayanAdvancedSubmissionRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:text="Not rated"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fadedBlue"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="228dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+
+                    android:text="Comments :"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textViewNurulBayanAdvancedSubmissionComment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:text="No Comment"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/openAssessmentBtnNurulBayanAdvanced"
+                android:text="View Assessment"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/fab_margin" />
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--Khat header-->
+    <LinearLayout
+        android:id="@+id/headerKhat"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:gravity="center"
+            android:text="@string/khat"
+            android:textColor="@color/white"
+            android:textSize="@dimen/page_title" />
+
+        <TextView
+            android:id="@+id/progressTVKhat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/list_item_title"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/fab_margin"
+            android:textColor="@color/white"
+            android:text="0/18"/>
+
+        <Switch
+            android:id="@+id/switchKhat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:layout_gravity="center"
+
+
+            />
+    </LinearLayout>
+    <!--Khat Body-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/expandableKhat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--Riqah Header-->
+        <LinearLayout
+            android:id="@+id/headerKhatRiqah"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:gravity="center"
+                android:text="@string/riqah"
+                android:textColor="@color/white"
+                android:textSize="@dimen/page_title" />
+            <TextView
+                android:id="@+id/progressTVRiqah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/list_item_title"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/fab_margin"
+                android:textColor="@color/white"
+                android:text="0/3"/>
+
+            <Switch
+                android:id="@+id/switchKhatRiqah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:layout_gravity="center"
+
+
+                />
+        </LinearLayout>
+        <!--Riqah Body-->
+        <LinearLayout
+            android:id="@+id/expandableKhatRiqah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--KhatRiqahBeginner-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fadedBlueLinearLayout"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textViewKhatRiqahBeginner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/beginner"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/page_title"
+                    android:background="@color/colorPrimaryDark"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Submission Status:"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatRiqahBeginnerSubmissionStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No submission"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Grading :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatRiqahBeginnerSubmissionRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="Not rated"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Comments :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatRiqahBeginnerSubmissionComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No Comment"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/openAssessmentBtnKhatRiqahBeginner"
+                    android:text="View Assessment"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/fab_margin" />
+
+
+
+
+            </LinearLayout>
+            <!--KhatRiqahIntermediate-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fadedBlueLinearLayout"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textViewKhatRiqahIntermediate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/intermediate"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/page_title"
+                    android:background="@color/colorPrimaryDark"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Submission Status:"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatRiqahIntermediateSubmissionStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No submission"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Grading :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatRiqahIntermediateSubmissionRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="Not rated"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Comments :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatRiqahIntermediateSubmissionComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No Comment"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/openAssessmentBtnKhatRiqahIntermediate"
+                    android:text="View Assessment"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/fab_margin" />
+
+
+
+
+            </LinearLayout>
+            <!--KhatRiqahAdvanced-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fadedBlueLinearLayout"
+                android:orientation="vertical">
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/advanced"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/page_title"
+                    android:background="@color/colorPrimaryDark"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Submission Status:"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatRiqahAdvancedSubmissionStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No submission"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Grading :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatRiqahAdvancedSubmissionRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="Not rated"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Comments :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatRiqahAdvancedSubmissionComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No Comment"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/openAssessmentBtnKhatRiqahAdvanced"
+                    android:text="View Assessment"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/fab_margin" />
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--Nasakh Header-->
+        <LinearLayout
+            android:id="@+id/headerKhatNasakh"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:gravity="center"
+                android:text="@string/nasakh"
+                android:textColor="@color/white"
+                android:textSize="@dimen/page_title" />
+
+            <TextView
+                android:id="@+id/progressTVNasakh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/list_item_title"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/fab_margin"
+                android:textColor="@color/white"
+                android:text="0/3"/>
+
+            <Switch
+                android:id="@+id/switchKhatNasakh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:layout_gravity="center"
+
+
+                />
+        </LinearLayout>
+        <!--Nasakh Body-->
+        <LinearLayout
+            android:id="@+id/expandableKhatNasakh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--KhatNasakhBeginner-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fadedBlueLinearLayout"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textViewKhatNasakhBeginner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/beginner"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/page_title"
+                    android:background="@color/colorPrimaryDark"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Submission Status:"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatNasakhBeginnerSubmissionStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No submission"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Grading :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatNasakhBeginnerSubmissionRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="Not rated"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Comments :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatNasakhBeginnerSubmissionComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No Comment"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/openAssessmentBtnKhatNasakhBeginner"
+                    android:text="View Assessment"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/fab_margin" />
+
+
+
+
+            </LinearLayout>
+            <!--KhatNasakhIntermediate-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fadedBlueLinearLayout"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textViewKhatNasakhIntermediate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/intermediate"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/page_title"
+                    android:background="@color/colorPrimaryDark"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Submission Status:"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatNasakhIntermediateSubmissionStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No submission"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Grading :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatNasakhIntermediateSubmissionRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="Not rated"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Comments :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatNasakhIntermediateSubmissionComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No Comment"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/openAssessmentBtnKhatNasakhIntermediate"
+                    android:text="View Assessment"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/fab_margin" />
+
+
+
+
+            </LinearLayout>
+            <!--KhatNasakhAdvanced-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fadedBlueLinearLayout"
+                android:orientation="vertical">
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/advanced"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/page_title"
+                    android:background="@color/colorPrimaryDark"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Submission Status:"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatNasakhAdvancedSubmissionStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No submission"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Grading :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatNasakhAdvancedSubmissionRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="Not rated"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Comments :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatNasakhAdvancedSubmissionComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No Comment"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/openAssessmentBtnKhatNasakhAdvanced"
+                    android:text="View Assessment"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/fab_margin" />
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--Farisi Header-->
+        <LinearLayout
+            android:id="@+id/headerKhatFarisi"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:gravity="center"
+                android:text="@string/farisi"
+                android:textColor="@color/white"
+                android:textSize="@dimen/page_title" />
+
+            <TextView
+                android:id="@+id/progressTVFarisi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/list_item_title"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/fab_margin"
+                android:textColor="@color/white"
+                android:text="0/3"/>
+
+            <Switch
+                android:id="@+id/switchKhatFarisi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:layout_gravity="center"
+
+
+                />
+        </LinearLayout>
+        <!--Farisi Body-->
+        <LinearLayout
+            android:id="@+id/expandableKhatFarisi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--KhatFarisiBeginner-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fadedBlueLinearLayout"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textViewKhatFarisiBeginner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/beginner"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/page_title"
+                    android:background="@color/colorPrimaryDark"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Submission Status:"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatFarisiBeginnerSubmissionStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No submission"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Grading :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatFarisiBeginnerSubmissionRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="Not rated"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Comments :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatFarisiBeginnerSubmissionComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No Comment"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/openAssessmentBtnKhatFarisiBeginner"
+                    android:text="View Assessment"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/fab_margin" />
+
+
+
+
+            </LinearLayout>
+            <!--KhatFarisiIntermediate-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fadedBlueLinearLayout"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textViewKhatFarisiIntermediate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/intermediate"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/page_title"
+                    android:background="@color/colorPrimaryDark"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Submission Status:"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatFarisiIntermediateSubmissionStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No submission"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Grading :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatFarisiIntermediateSubmissionRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="Not rated"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Comments :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatFarisiIntermediateSubmissionComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No Comment"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/openAssessmentBtnKhatFarisiIntermediate"
+                    android:text="View Assessment"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/fab_margin" />
+
+
+
+
+            </LinearLayout>
+            <!--KhatFarisiAdvanced-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fadedBlueLinearLayout"
+                android:orientation="vertical">
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/advanced"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/page_title"
+                    android:background="@color/colorPrimaryDark"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Submission Status:"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatFarisiAdvancedSubmissionStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No submission"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Grading :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatFarisiAdvancedSubmissionRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="Not rated"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Comments :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatFarisiAdvancedSubmissionComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No Comment"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/openAssessmentBtnKhatFarisiAdvanced"
+                    android:text="View Assessment"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/fab_margin" />
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--Diwani Header-->
+        <LinearLayout
+            android:id="@+id/headerKhatDiwani"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:gravity="center"
+                android:text="@string/diwani"
+                android:textColor="@color/white"
+                android:textSize="@dimen/page_title" />
+            <TextView
+                android:id="@+id/progressTVDiwani"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/list_item_title"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/fab_margin"
+                android:textColor="@color/white"
+                android:text="0/3"/>
+
+            <Switch
+                android:id="@+id/switchKhatDiwani"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:layout_gravity="center"
+
+
+                />
+        </LinearLayout>
+        <!--Diwani Body-->
+        <LinearLayout
+            android:id="@+id/expandableKhatDiwani"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--KhatDiwaniBeginner-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fadedBlueLinearLayout"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textViewKhatDiwaniBeginner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/beginner"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/page_title"
+                    android:background="@color/colorPrimaryDark"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Submission Status:"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatDiwaniBeginnerSubmissionStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No submission"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Grading :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatDiwaniBeginnerSubmissionRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="Not rated"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Comments :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatDiwaniBeginnerSubmissionComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No Comment"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/openAssessmentBtnKhatDiwaniBeginner"
+                    android:text="View Assessment"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/fab_margin" />
+
+
+
+
+            </LinearLayout>
+            <!--KhatDiwaniIntermediate-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fadedBlueLinearLayout"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textViewKhatDiwaniIntermediate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/intermediate"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/page_title"
+                    android:background="@color/colorPrimaryDark"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Submission Status:"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatDiwaniIntermediateSubmissionStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No submission"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Grading :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatDiwaniIntermediateSubmissionRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="Not rated"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Comments :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatDiwaniIntermediateSubmissionComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No Comment"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/openAssessmentBtnKhatDiwaniIntermediate"
+                    android:text="View Assessment"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/fab_margin" />
+
+
+
+
+            </LinearLayout>
+            <!--KhatDiwaniAdvanced-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fadedBlueLinearLayout"
+                android:orientation="vertical">
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/advanced"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/page_title"
+                    android:background="@color/colorPrimaryDark"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Submission Status:"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatDiwaniAdvancedSubmissionStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No submission"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Grading :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatDiwaniAdvancedSubmissionRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="Not rated"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Comments :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatDiwaniAdvancedSubmissionComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No Comment"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/openAssessmentBtnKhatDiwaniAdvanced"
+                    android:text="View Assessment"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/fab_margin" />
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--Diwani Jali Header-->
+        <LinearLayout
+            android:id="@+id/headerKhatDiwaniJali"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:gravity="center"
+                android:text="@string/diwani_jali"
+                android:textColor="@color/white"
+                android:textSize="@dimen/page_title" />
+
+            <TextView
+                android:id="@+id/progressTVDiwaniJali"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/list_item_title"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/fab_margin"
+                android:textColor="@color/white"
+                android:text="0/3"/>
+
+            <Switch
+                android:id="@+id/switchKhatDiwaniJali"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:layout_gravity="center"
+
+
+                />
+        </LinearLayout>
+        <!--Diwani Jali Body-->
+        <LinearLayout
+            android:id="@+id/expandableKhatDiwaniJali"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--KhatDiwaniJaliBeginner-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fadedBlueLinearLayout"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textViewKhatDiwaniJaliBeginner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/beginner"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/page_title"
+                    android:background="@color/colorPrimaryDark"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Submission Status:"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatDiwaniJaliBeginnerSubmissionStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No submission"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Grading :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatDiwaniJaliBeginnerSubmissionRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="Not rated"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Comments :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatDiwaniJaliBeginnerSubmissionComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No Comment"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/openAssessmentBtnKhatDiwaniJaliBeginner"
+                    android:text="View Assessment"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/fab_margin" />
+
+
+
+
+            </LinearLayout>
+            <!--KhatDiwaniJaliIntermediate-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fadedBlueLinearLayout"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textViewKhatDiwaniJaliIntermediate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/intermediate"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/page_title"
+                    android:background="@color/colorPrimaryDark"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Submission Status:"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatDiwaniJaliIntermediateSubmissionStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No submission"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Grading :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatDiwaniJaliIntermediateSubmissionRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="Not rated"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Comments :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatDiwaniJaliIntermediateSubmissionComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No Comment"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/openAssessmentBtnKhatDiwaniJaliIntermediate"
+                    android:text="View Assessment"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/fab_margin" />
+
+
+
+
+            </LinearLayout>
+            <!--KhatDiwaniJaliAdvanced-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fadedBlueLinearLayout"
+                android:orientation="vertical">
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/advanced"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/page_title"
+                    android:background="@color/colorPrimaryDark"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Submission Status:"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatDiwaniJaliAdvancedSubmissionStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No submission"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Grading :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatDiwaniJaliAdvancedSubmissionRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="Not rated"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Comments :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatDiwaniJaliAdvancedSubmissionComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No Comment"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/openAssessmentBtnKhatDiwaniJaliAdvanced"
+                    android:text="View Assessment"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/fab_margin" />
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--Thuluth Header-->
+        <LinearLayout
+            android:id="@+id/headerKhatThuluth"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:gravity="center"
+                android:text="@string/thuluth"
+                android:textColor="@color/white"
+                android:textSize="@dimen/page_title" />
+
+            <TextView
+                android:id="@+id/progressTVThuluth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/list_item_title"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/fab_margin"
+                android:textColor="@color/white"
+                android:text="0/3"/>
+
+            <Switch
+                android:id="@+id/switchKhatThuluth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:layout_gravity="center"
+
+
+                />
+        </LinearLayout>
+        <!--Thuluth Body-->
+        <LinearLayout
+            android:id="@+id/expandableKhatThuluth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--KhatThuluthBeginner-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fadedBlueLinearLayout"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textViewKhatThuluthBeginner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/beginner"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/page_title"
+                    android:background="@color/colorPrimaryDark"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Submission Status:"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatThuluthBeginnerSubmissionStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No submission"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Grading :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatThuluthBeginnerSubmissionRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="Not rated"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Comments :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatThuluthBeginnerSubmissionComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No Comment"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/openAssessmentBtnKhatThuluthBeginner"
+                    android:text="View Assessment"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/fab_margin" />
+
+
+
+
+            </LinearLayout>
+            <!--KhatThuluthIntermediate-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fadedBlueLinearLayout"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textViewKhatThuluthIntermediate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/intermediate"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/page_title"
+                    android:background="@color/colorPrimaryDark"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Submission Status:"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatThuluthIntermediateSubmissionStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No submission"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Grading :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatThuluthIntermediateSubmissionRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="Not rated"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Comments :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatThuluthIntermediateSubmissionComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No Comment"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/openAssessmentBtnKhatThuluthIntermediate"
+                    android:text="View Assessment"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/fab_margin" />
+
+
+
+
+            </LinearLayout>
+            <!--KhatThuluthAdvanced-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fadedBlueLinearLayout"
+                android:orientation="vertical">
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/advanced"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/page_title"
+                    android:background="@color/colorPrimaryDark"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Submission Status:"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatThuluthAdvancedSubmissionStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No submission"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Grading :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatThuluthAdvancedSubmissionRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="Not rated"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadedBlue"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:text="Comments :"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewKhatThuluthAdvancedSubmissionComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="No Comment"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/openAssessmentBtnKhatThuluthAdvanced"
+                    android:text="View Assessment"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/fab_margin" />
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+
+</ScrollView>

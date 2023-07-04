@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_dark_blue">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_margin="@dimen/fab_margin"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Assessment Instructions:"
+                    android:layout_marginTop="55dp"
+                    android:layout_marginStart="@dimen/fab_margin"
+                    android:layout_marginEnd="@dimen/fab_margin"
+                    android:textSize="@dimen/page_title"/>
+
+                <TextView
+                    android:id="@+id/textViewTaskQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="@dimen/fab_margin"
+                    android:background="@color/white"
+                    android:text="@string/question_khat_advanced"
+                    android:textSize="@dimen/list_item_title" />
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <ImageView
+            android:id="@+id/previewSubmission1"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/image_preview"></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="Task 1"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimaryDark">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+
+                android:textColor="@color/white"
+                android:text="Submission Status:" />
+
+            <TextView
+                android:id="@+id/textViewSubmissionStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No submission"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_margin="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimaryDark">
+
+            <TextView
+
+                android:layout_width="228dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+
+                android:text="Grading :"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textViewSubmissionRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not rated"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_margin="8dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/previewSubmission2"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/image_preview"></ImageView>
+
+        <TextView
+            android:id="@+id/khat_advanced_textview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="Task 2"
+            android:textColor="@color/white"
+            />
+        <LinearLayout
+            android:id="@+id/khat_advanced_linearlayout2_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimaryDark">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+
+                android:textColor="@color/white"
+                android:text="Submission Status:" />
+
+            <TextView
+                android:id="@+id/textViewSubmissionStatus2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No submission"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_margin="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/khat_advanced_linearlayout2_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimaryDark">
+
+            <TextView
+
+                android:layout_width="228dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+
+                android:text="Grading :"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textViewSubmissionRate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not rated"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_margin="8dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/previewSubmission3"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/image_preview"></ImageView>
+
+        <TextView
+            android:id="@+id/khat_advanced_textview3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="Task 3"
+            android:textColor="@color/white"
+            />
+
+        <LinearLayout
+            android:id="@+id/khat_advanced_linearlayout3_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimaryDark">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+
+                android:textColor="@color/white"
+                android:text="Submission Status:" />
+
+            <TextView
+                android:id="@+id/textViewSubmissionStatus3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No submission"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_margin="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/khat_advanced_linearlayout3_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimaryDark">
+
+            <TextView
+
+                android:layout_width="228dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+
+                android:text="Grading :"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textViewSubmissionRate3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not rated"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_margin="8dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
